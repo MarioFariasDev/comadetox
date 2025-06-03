@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coma Detox</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="imagens/logo.png" alt="Logo Coma Detox" class="logo">
+    <h1>Bem-vindo ao Coma Detox</h1>
+    <p>Suas marmitas saudáveis, práticas e deliciosas!</p>
+  </header>
+
+  <section id="cardapio">
+    <h2>Cardápio da Semana</h2>
+    <div class="marmita">
+      <img src="imagens/marmita1.jpg" alt="Marmita 1">
+      <h3>Frango com Batata Doce</h3>
+      <p>Frango grelhado, batata doce, brócolis no vapor.</p>
+      <span>R$ 19,90</span>
+      <button onclick="fazerPedido('Frango com Batata Doce')">Pedir via WhatsApp</button>
+    </div>
+    <div class="marmita">
+      <img src="imagens/marmita2.jpg" alt="Marmita 2">
+      <h3>Quinoa com Legumes</h3>
+      <p>Quinoa cozida, abóbora, vagem e cenoura.</p>
+      <span>R$ 21,90</span>
+      <button onclick="fazerPedido('Quinoa com Legumes')">Pedir via WhatsApp</button>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Fale com a gente</h2>
+    <form id="form-contato">
+      <input type="text" placeholder="Seu nome" required />
+      <input type="tel" placeholder="Seu telefone" required />
+      <textarea placeholder="Algum pedido especial?"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Coma Detox</p>
+    <a href="https://wa.me/SEU_NUMERO" target="_blank">WhatsApp</a> |
+    <a href="https://instagram.com/SEU_INSTAGRAM" target="_blank">Instagram</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
