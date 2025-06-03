@@ -5,34 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Coma Detox</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header class="hero">
     <img src="imagens/logo.png" alt="Logo Coma Detox" class="logo">
-    <h1>Bem-vindo ao Coma Detox</h1>
-    <p>Suas marmitas saudáveis, práticas e deliciosas!</p>
+    <h1>Alimentação saudável com praticidade</h1>
+    <p class="descricao">Marmitas artesanais feitas com carinho e ingredientes frescos</p>
+    <a href="https://wa.me/5592984413665" class="btn-whatsapp" target="_blank">Fazer Pedido</a>
   </header>
 
   <section id="cardapio">
     <h2>Cardápio da Semana</h2>
-    <div class="marmita">
-      <img src="imagens/marmita1.jpg" alt="Marmita 1">
-      <h3>Frango com Batata Doce</h3>
-      <p>Frango grelhado, batata doce, brócolis no vapor.</p>
-      <span>R$ 19,90</span>
-      <button onclick="fazerPedido('Frango com Batata Doce')">Pedir via WhatsApp</button>
-    </div>
-    <div class="marmita">
-      <img src="imagens/marmita2.jpg" alt="Marmita 2">
-      <h3>Quinoa com Legumes</h3>
-      <p>Quinoa cozida, abóbora, vagem e cenoura.</p>
-      <span>R$ 21,90</span>
-      <button onclick="fazerPedido('Quinoa com Legumes')">Pedir via WhatsApp</button>
+    <div class="marmitas-container">
+      <div class="marmita">
+        <img src="imagens/marmita1.jpg" alt="Frango com Batata Doce">
+        <h3>Frango com Batata Doce</h3>
+        <p class="descricao">Frango grelhado, batata doce e brócolis no vapor.</p>
+        <span>R$ 19,90</span>
+        <button onclick="fazerPedido('Frango com Batata Doce')">Pedir via WhatsApp</button>
+      </div>
+      <div class="marmita">
+        <img src="imagens/marmita2.jpg" alt="Quinoa com Legumes">
+        <h3>Quinoa com Legumes</h3>
+        <p class="descricao">Quinoa cozida, abóbora, vagem e cenoura.</p>
+        <span>R$ 21,90</span>
+        <button onclick="fazerPedido('Quinoa com Legumes')">Pedir via WhatsApp</button>
+      </div>
     </div>
   </section>
 
+  <section id="como-funciona">
+    <h2>Como Funciona</h2>
+    <ol>
+      <li>1. Escolha sua marmita preferida</li>
+      <li>2. Faça o pedido pelo WhatsApp</li>
+      <li>3. Receba em casa ou retire no local</li>
+    </ol>
+  </section>
+
+  <section id="beneficios">
+    <h2>Por que escolher o Coma Detox?</h2>
+    <ul>
+      <li>✅ Praticidade no seu dia a dia corrido</li>
+      <li>✅ Alimentação saudável, equilibrada e saborosa</li>
+      <li>✅ Ingredientes frescos e selecionados com cuidado</li>
+      <li>✅ Preço justo e marmitas sempre fresquinhas</li>
+    </ul>
+  </section>
+
+  <section id="depoimentos">
+    <h2>O que dizem nossos clientes</h2>
+    <blockquote>“As melhores marmitas que já comi! Sempre fresquinhas e gostosas.” – Ana M.</blockquote>
+    <blockquote>“Me ajudou muito na dieta e economizei tempo toda semana.” – Carlos P.</blockquote>
+  </section>
+
+  <section id="faq">
+    <h2>Dúvidas Frequentes</h2>
+    <details>
+      <summary>Como faço o pedido?</summary>
+      <p>Basta clicar no botão "Pedir via WhatsApp" ou no botão principal no topo do site.</p>
+    </details>
+    <details>
+      <summary>Vocês entregam em toda a cidade?</summary>
+      <p>Sim, consulte o valor da taxa de entrega pelo WhatsApp.</p>
+    </details>
+    <details>
+      <summary>Até que dia posso pedir?</summary>
+      <p>Pedidos aceitos até quinta-feira para entrega a partir de segunda.</p>
+    </details>
+  </section>
+
   <section id="contato">
-    <h2>Fale com a gente</h2>
+    <h2>Fale com a Gente</h2>
     <form id="form-contato">
       <input type="text" placeholder="Seu nome" required />
       <input type="tel" placeholder="Seu telefone" required />
@@ -42,9 +87,7 @@
   </section>
 
   <footer>
-    <p>© 2025 Coma Detox</p>
-    <a href="https://wa.me/SEU_NUMERO" target="_blank">WhatsApp</a> |
-    <a href="https://instagram.com/SEU_INSTAGRAM" target="_blank">Instagram</a>
+    <p>© 2025 Coma Detox | <a href="https://wa.me/5592984413665" target="_blank">WhatsApp</a> | <a href="https://www.instagram.com/comadetox/" target="_blank">Instagram</a></p>
   </footer>
 
   <script src="script.js"></script>
